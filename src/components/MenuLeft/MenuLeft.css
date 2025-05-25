@@ -1,0 +1,6 @@
+.menu-left {
+    width: 250px;
+    height: calc(100% - 35px);
+    background-color: lightblue;
+    float: left;
+}
