@@ -1,0 +1,8 @@
+.block-pie-licences {
+  width: 400px;
+  height: 300px;
+}
+
+.block-pie-licences .recharts-sector:focus {
+  outline: none;
+}

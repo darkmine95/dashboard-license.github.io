@@ -1,0 +1,16 @@
+.block-cost-total {
+  width: 220px;
+  height: 115px;
+}
+
+.block-cost-total .block-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.block-cost-total .block-value {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}

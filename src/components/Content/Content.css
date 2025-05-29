@@ -3,6 +3,7 @@
   width: calc(100% - 250px);
   min-height: calc(100% - 35px);
   float: left;
+  overflow-x: auto;
 }
 
 .content h1 {

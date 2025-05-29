@@ -1,7 +1,9 @@
 .dashboard {
 }
 
-.dashboard .title-licence {
+.section-numbers {
+  width: 1150px;
+  height: 180px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }

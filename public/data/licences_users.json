@@ -1,16 +1,44 @@
 [
     {
-        "user": "John Doe",
+        "user": "user 1",
         "service": "Service 1",
         "site": "Site 1",
         "licence": "Abobe",
         "version": "Acrobat 9 Std"
     },
     {
-        "user": "Rick Grims",
+        "user": "user 2",
         "service": "Service 2",
         "site": "Site 2",
         "licence": "Abobe",
         "version": "Acrobat 9 Pro"
+    },
+    {
+        "user": "user 3",
+        "service": "Service 2",
+        "site": "Site 2",
+        "licence": "Oximailing",
+        "version": "Oximailing"
+    },
+    {
+        "user": "user 4",
+        "service": "Service 2",
+        "site": "Site 2",
+        "licence": "Oximailing",
+        "version": "Oximailing PCA"
+    },
+    {
+        "user": "user 5",
+        "service": "Service 2",
+        "site": "Site 2",
+        "licence": "Oximailing",
+        "version": "Oximailing PCA"
+    },
+    {
+        "user": "user 6",
+        "service": "Service 2",
+        "site": "Site 2",
+        "licence": "Sphinx iQ3",
+        "version": "Sphinx iQ3 Scanner"
     }
 ]

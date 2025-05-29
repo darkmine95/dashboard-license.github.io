@@ -3,12 +3,12 @@ import Dashboard from './Dashboard/Dashboard';
 import Licence from './Licence/Licence';
 import ManageLicences from './ManageLicences/ManageLicences';
 
-function Content({ licences, pageSelected }) {
+function Content({ licences, licencesUsers, pageSelected }) {
 
   return (
     <div className="content">
       {
-        pageSelected.page === "Dashboard" && <Dashboard licences={licences} />
+        pageSelected.page === "Dashboard" && <Dashboard licences={licences} licencesUsers={licencesUsers}/>
       }
       {
         pageSelected.page === "Gestion des licences" && <ManageLicences />
