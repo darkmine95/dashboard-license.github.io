@@ -4,7 +4,7 @@ export default function MenuLeftGeneral({ setPageSelected }) {
   const handleClick = (event, page) => {
     event.preventDefault();
     setPageSelected({
-      type: page,
+      name: page,
       licence_name: "",
       licence_version: ""
     })
@@ -16,8 +16,8 @@ export default function MenuLeftGeneral({ setPageSelected }) {
         Général
       </h1>
       <ul>
-        <li onClick={(event) => handleClick(event, 'dashboard')}>Dashboard</li>
-        <li onClick={(event) => handleClick(event, 'manage_licences')}>Gestion des licences</li>
+        <li onClick={(event) => handleClick(event, 'Dashboard')}>Dashboard</li>
+        <li onClick={(event) => handleClick(event, 'Gestion des licences')}>Gestion des licences</li>
       </ul>
     </div>
   );

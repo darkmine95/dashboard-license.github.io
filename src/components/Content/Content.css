@@ -1,15 +1,21 @@
 .content {
-    background-color: pink;
-    width: calc(100% - 250px);
-    min-height: calc(100% - 35px);
-    float: left;
+  background-color: pink;
+  width: calc(100% - 250px);
+  min-height: calc(100% - 35px);
+  float: left;
 }
 
-.square-input {
-  width: 100px;
-  height: 100px;
-  font-size: 16px;
-  text-align: center;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+.content h1 {
+  margin: 0;
+}
+
+.content h2 {
+  font-weight: 200;
+  margin: 0;
+}
+
+
+.content .title-licence {
+  display: flex;
+  flex-direction: column;
 }

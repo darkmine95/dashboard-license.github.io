@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [data, setData] = useState([]);
   const [pageSelected, setPageSelected] = useState({
-    type: "dashboard",
+    name: "Dashboard",
     licence_name: "",
     licence_version: ""
   });
