@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import './App.css';
 
 function App() {
-  const [data, setData] = useState([]);
+  const [licences, setlicences] = useState([]);
   const [pageSelected, setPageSelected] = useState({
     page: "Dashboard",
     licence_name: "",
@@ -20,15 +20,15 @@ function App() {
         }
         return response.json();
       })
-      .then((jsonData) => setData(jsonData))
+      .then((jsonData) => setlicences(jsonData))
       .catch((error) => console.error('Erreur:', error));
   }, []);
 
   return (
     <div className="app">
       <Navbar />
-      <MenuLeft data={data} setPageSelected={setPageSelected} />
-      <Content data={data} pageSelected={pageSelected} />
+      <MenuLeft licences={licences} setPageSelected={setPageSelected} />
+      <Content licences={licences} pageSelected={pageSelected} />
     </div>
   );
 }

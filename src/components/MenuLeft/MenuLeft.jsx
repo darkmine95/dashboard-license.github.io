@@ -2,12 +2,12 @@ import MenuLeftGeneral from './MenuLeftGeneral/MenuLeftGeneral';
 import MenuLeftLicences from './MenuLeftLicences/MenuLeftLicences';
 import './MenuLeft.css';
 
-function MenuLeft({ data, setPageSelected }) {
+function MenuLeft({ licences, setPageSelected }) {
 
   return (
     <div className="menu-left">
       <MenuLeftGeneral setPageSelected={setPageSelected} />
-      <MenuLeftLicences data={data} setPageSelected={setPageSelected} />
+      <MenuLeftLicences licences={licences} setPageSelected={setPageSelected} />
     </div>
   );
 }

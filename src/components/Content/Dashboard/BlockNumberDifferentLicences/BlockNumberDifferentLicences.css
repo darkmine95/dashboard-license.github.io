@@ -1,0 +1,16 @@
+.block-number-different-licences {
+  width: 220px;
+  height: 115px;
+}
+
+.block-number-different-licences .block-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.block-number-different-licences .block-value {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}

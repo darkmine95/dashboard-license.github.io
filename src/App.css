@@ -9,3 +9,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.block {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 20px;
+    box-shadow: 2px 2px 4px grey;
+    border: 1px solid lightgray;
+    margin-left: 20px;
+    margin-top: 20px;
+}

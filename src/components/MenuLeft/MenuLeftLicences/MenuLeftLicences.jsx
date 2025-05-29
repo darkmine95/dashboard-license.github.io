@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import './MenuLeftLicences.css';
 
-export default function MenuLeftLicences({ data, setPageSelected }) {
+export default function MenuLeftLicences({ licences, setPageSelected }) {
 
   // Regroupement des licences par nom
   const dataFormatted = useMemo(() => {
     let dataFormattedTmp = {};
-    data.forEach(d => {
+    licences.forEach(d => {
       if (!dataFormattedTmp[d.name]) {
         dataFormattedTmp[d.name] = [d];
       } else {
@@ -14,7 +14,7 @@ export default function MenuLeftLicences({ data, setPageSelected }) {
       }
     });
     return dataFormattedTmp;
-  }, [data]);
+  }, [licences]);
 
   const handleClick = (event, name, version) => {
     event.preventDefault();
