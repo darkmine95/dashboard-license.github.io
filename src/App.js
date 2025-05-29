@@ -6,6 +6,11 @@ import './App.css';
 
 function App() {
   const [data, setData] = useState([]);
+  const [pageSelected, setPageSelected] = useState({
+    type: "dashboard",
+    licence_name: "",
+    licence_version: ""
+  });
 
   useEffect(() => {
     fetch('/data/licences.json')
@@ -22,8 +27,8 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <MenuLeft data={data} />
-      <Content />
+      <MenuLeft data={data} setPageSelected={setPageSelected} />
+      <Content data={data} pageSelected={pageSelected} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import './Content.css';
 
-function Content() {
+function Content({ pageSelected }) {
   return (
     <div className="content">
       <input
