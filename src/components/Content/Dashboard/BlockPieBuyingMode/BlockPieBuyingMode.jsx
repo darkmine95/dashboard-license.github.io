@@ -47,7 +47,7 @@ export default function BlockPieBuyingMode({ licences, licencesUsers }) {
         value: buyingModeValues[elt]
       }
     })
-  }, [licencesUsers]);
+  }, [licencesUsers, licences]);
 
   const renderCustomizedLabel = ({
     cx,

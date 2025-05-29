@@ -5,7 +5,7 @@ export default function BlockNumberCostTotal({ licences }) {
 
   const costTotal = useMemo(() => {
     return 200
-  }, [licences]);
+  }, []);
 
   return (
     <div className="block-cost-total block">

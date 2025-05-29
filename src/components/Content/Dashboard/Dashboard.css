@@ -1,9 +1,24 @@
-.dashboard {
-}
+.dashboard {}
 
-.section-numbers {
-  width: 1150px;
-  height: 180px;
+section {
   display: flex;
   flex-direction: row;
+}
+
+.section-one {
+  width: 1150px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+.section-two {
+  width: 1150px;
+  height: 343px;
+  margin-bottom: 20px;
+}
+
+.section-three {
+  width: 1150px;
+  height: 420px;
+  margin-bottom: 20px;
 }

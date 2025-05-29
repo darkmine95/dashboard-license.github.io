@@ -1,0 +1,8 @@
+export const COLORS = [
+  "#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#A28EFF",
+  "#FF6699", "#33CC33", "#FF4444", "#66CCCC", "#9966FF",
+  "#FF9933", "#6699FF", "#FF6666", "#CCFF66", "#FFCC99",
+  "#99CCFF", "#33CCCC", "#CC99FF", "#FFCC00", "#66FF66",
+  "#FF3366", "#33FFCC", "#3366FF", "#9900CC", "#FF9966",
+  "#66FF99", "#FFB6C1", "#8A2BE2", "#00CED1", "#FFA07A"
+];

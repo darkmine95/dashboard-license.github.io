@@ -15,35 +15,35 @@
     },
     {
         "user": "user 3",
-        "service": "Service 2",
+        "service": "Service 3",
         "site": "Site 2",
         "licence": "Oximailing",
         "version": "Oximailing"
     },
     {
         "user": "user 4",
-        "service": "Service 2",
+        "service": "Service 4",
         "site": "Site 2",
         "licence": "Oximailing",
         "version": "Oximailing PCA"
     },
     {
         "user": "user 5",
-        "service": "Service 2",
+        "service": "Service 5",
         "site": "Site 2",
         "licence": "Oximailing",
         "version": "Oximailing PCA"
     },
     {
         "user": "user 6",
-        "service": "Service 2",
+        "service": "Service 5",
         "site": "Site 2",
         "licence": "Sphinx iQ3",
         "version": "Sphinx iQ3 Scanner"
     },
     {
         "user": "user 7",
-        "service": "Service 2",
+        "service": "Service 1",
         "site": "Site 2",
         "licence": "Sphinx iQ3",
         "version": "Sphinx iQ3 Scanner"

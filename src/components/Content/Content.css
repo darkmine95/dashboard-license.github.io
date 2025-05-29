@@ -1,5 +1,5 @@
 .content {
-  background-color: pink;
+  background-color: #d9d9d9;
   width: calc(100% - 250px);
   min-height: calc(100% - 35px);
   float: left;
@@ -10,6 +10,7 @@
   margin: 0;
   margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content h2 {
