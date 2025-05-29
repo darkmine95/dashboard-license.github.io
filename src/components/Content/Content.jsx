@@ -3,7 +3,11 @@ import './Content.css';
 function Content() {
   return (
     <div className="content">
-      content
+      <input
+        type="number"
+        className="square-input"
+        placeholder="Entrez un nombre"
+      />
     </div>
   );
 }

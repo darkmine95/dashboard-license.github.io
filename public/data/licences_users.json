@@ -1,0 +1,16 @@
+[
+    {
+        "user": "John Doe",
+        "service": "Service 1",
+        "site": "Site 1",
+        "licence": "Abobe",
+        "version": "Acrobat 9 Std"
+    },
+    {
+        "user": "Rick Grims",
+        "service": "Service 2",
+        "site": "Site 2",
+        "licence": "Abobe",
+        "version": "Acrobat 9 Pro"
+    }
+]
