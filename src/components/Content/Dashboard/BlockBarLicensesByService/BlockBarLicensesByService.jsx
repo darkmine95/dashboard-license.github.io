@@ -45,10 +45,11 @@ export default function BlockBarLicensesByService({ licencesUsers, licences }) {
 
     return (
         <div className="block-bar-licences-by-service block">
-            <ResponsiveContainer width="100%" height="100%">
+            <div className='chart-title'>Répartition des licences par service</div>
+            <ResponsiveContainer width="100%" height="90%">
                 <BarChart
                     width={500}
-                    height={300}
+                    height={280}
                     data={data}
                     margin={{
                         top: 20,
