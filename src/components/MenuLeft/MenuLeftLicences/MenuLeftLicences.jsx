@@ -19,7 +19,7 @@ export default function MenuLeftLicences({ data, setPageSelected }) {
   const handleClick = (event, name, version) => {
     event.preventDefault();
     setPageSelected({
-      name: "Licence",
+      page: "Licence",
       licence_name: name,
       licence_version: version
     })

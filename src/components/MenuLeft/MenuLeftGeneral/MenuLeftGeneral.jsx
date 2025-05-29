@@ -4,7 +4,7 @@ export default function MenuLeftGeneral({ setPageSelected }) {
   const handleClick = (event, page) => {
     event.preventDefault();
     setPageSelected({
-      name: page,
+      page: page,
       licence_name: "",
       licence_version: ""
     })

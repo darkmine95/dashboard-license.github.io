@@ -1,22 +1,21 @@
 import './Content.css';
+import Dashboard from './Dashboard/Dashboard';
+import Licence from './Licence/Licence';
+import ManageLicences from './ManageLicences/ManageLicences';
 
 function Content({ pageSelected }) {
 
   return (
     <div className="content">
-
-      {/* Title */}
-      <div className='title'>
-        {
-          pageSelected.name !== "Licence" && <h1>{pageSelected.name}</h1>
-        }
-        {
-          pageSelected.name === "Licence" && <div className='title-licence'>
-            <h1>{pageSelected.licence_name}</h1>
-            <h2>{pageSelected.licence_version}</h2>
-          </div>
-        }
-      </div>
+      {
+        pageSelected.page === "Dashboard" && <Dashboard />
+      }
+      {
+        pageSelected.page === "Gestion des licences" && <ManageLicences />
+      }
+      {
+        pageSelected.page === "Licence" && <Licence name={pageSelected.licence_name} version={pageSelected.licence_version}/>
+      }
     </div>
   );
 }

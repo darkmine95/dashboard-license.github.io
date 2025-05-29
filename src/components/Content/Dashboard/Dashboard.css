@@ -1,0 +1,7 @@
+.dashboard {
+}
+
+.dashboard .title-licence {
+  display: flex;
+  flex-direction: column;
+}
