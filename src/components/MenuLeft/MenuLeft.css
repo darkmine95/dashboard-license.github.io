@@ -4,3 +4,18 @@
     background-color: lightblue;
     float: left;
 }
+
+.menu-left ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.menu-left li {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-left img {
+    width: 24px;
+    height: 24px;
+}

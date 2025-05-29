@@ -36,7 +36,7 @@
     {
         "name": "Oximailing",
         "icon": "oximailing.png",
-        "version": "",
+        "version": "Oximailing",
         "verification_date": "",
         "buying_mode": "Abonnement",
         "cost_annual_ttc": 1318,
@@ -51,9 +51,9 @@
         "url": ""
     },
     {
-        "name": "Oximailing PCA",
+        "name": "Oximailing",
         "icon": "oximailing.png",
-        "version": "",
+        "version": "Oximailing PCA",
         "verification_date": "",
         "buying_mode": "Abonnement",
         "cost_annual_ttc": 1918,
@@ -86,7 +86,7 @@
     },
 
     {
-        "name": "Sphinx iQ3 Scanner",
+        "name": "Sphinx iQ3",
         "icon": "sphinx.png",
         "version": "Sphinx iQ3 Scanner",
         "verification_date": "",
@@ -102,9 +102,8 @@
         "usage": ["local"],
         "url": ""
     },
-
     {
-        "name": "Sphinx Online",
+        "name": "Sphinx iQ3",
         "icon": "sphinx.png",
         "version": "Sphinx Online",
         "verification_date": "",
