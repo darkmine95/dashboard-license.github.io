@@ -1,6 +1,7 @@
 import BlockNumberCostTotal from './BlockNumberCostTotal/BlockNumberCostTotal';
 import BlockNumberDifferentLicences from './BlockNumberDifferentLicences/BlockNumberDifferentLicences';
 import BlockPieLicences from './BlockPieLicences/BlockPieLicences';
+import BlockPieBuyingMode from './BlockPieBuyingMode/BlockPieBuyingMode';
 import './Dashboard.css';
 
 export default function Dashboard({ licences, licencesUsers }) {
@@ -15,6 +16,7 @@ export default function Dashboard({ licences, licencesUsers }) {
         <BlockNumberCostTotal licences={licences}/>
       </div>
       <BlockPieLicences licencesUsers={licencesUsers}/>
+      <BlockPieBuyingMode licencesUsers={licencesUsers} licences={licences}/>
     </div>
   );
 }

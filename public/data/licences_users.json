@@ -3,14 +3,14 @@
         "user": "user 1",
         "service": "Service 1",
         "site": "Site 1",
-        "licence": "Abobe",
+        "licence": "Adobe",
         "version": "Acrobat 9 Std"
     },
     {
         "user": "user 2",
         "service": "Service 2",
         "site": "Site 2",
-        "licence": "Abobe",
+        "licence": "Adobe",
         "version": "Acrobat 9 Pro"
     },
     {
@@ -36,6 +36,13 @@
     },
     {
         "user": "user 6",
+        "service": "Service 2",
+        "site": "Site 2",
+        "licence": "Sphinx iQ3",
+        "version": "Sphinx iQ3 Scanner"
+    },
+    {
+        "user": "user 7",
         "service": "Service 2",
         "site": "Site 2",
         "licence": "Sphinx iQ3",

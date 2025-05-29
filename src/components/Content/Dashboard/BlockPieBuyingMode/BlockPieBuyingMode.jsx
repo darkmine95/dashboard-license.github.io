@@ -1,20 +1,20 @@
 import { useMemo } from 'react';
 import { COLORS } from './colors';
-import './BlockPieLicences.css';
+import './BlockPieBuyingMode.css';
 import { PieChart, Pie, Cell, Legend } from "recharts";
 
 
 const RADIAN = Math.PI / 180;
 
 
-export default function BlockPieLicences({ licencesUsers }) {
+export default function BlockPieBuyingMode({ licences, licencesUsers }) {
 
   /**
-   * Récupération une liste avec les licences et leur nombre
+   * Récupération de nombre d'utilisateurs par mode d'achat
    * Exemple:
    * [
-   *    { name: "Adobe", value: 5 },
-   *    { name: "Oximailing", value: 2 },
+   *    { name: "Abonnement", value: 5 },
+   *    { name: "Achat", value: 2 },
    * ]
    */
   const data = useMemo(() => {
@@ -27,10 +27,24 @@ export default function BlockPieLicences({ licencesUsers }) {
       }
     });
 
-    return Object.keys(valueByLicence).map(elt => {
+    let buyingModeValues = {
+      'Achat': 0,
+      'Abonnement': 0
+    };
+    let done = [];
+    licences.forEach(element => {
+      if (valueByLicence[element.name] && !done.includes(element.name)) {
+        console.log(element.name)
+        const buyingMode = element.buying_mode;
+        buyingModeValues[buyingMode] += valueByLicence[element.name];
+        done.push(element.name);
+      }
+    });
+
+    return Object.keys(buyingModeValues).map(elt => {
       return {
         name: elt,
-        value: valueByLicence[elt]
+        value: buyingModeValues[elt]
       }
     })
   }, [licencesUsers]);
@@ -63,8 +77,8 @@ export default function BlockPieLicences({ licencesUsers }) {
   };
 
   return (
-    <div className="block-pie-licences block">
-      <div className='chart-title'>Répartition des utilisateurs par licence</div>
+    <div className="block-pie-buying-mode block">
+      <div className='chart-title'>Répartition des utilisateurs par mode d'achat</div>
       <PieChart width={400} height={290}>
         <Pie
           data={data}

@@ -1,0 +1,8 @@
+.block-pie-buying-mode {
+  width: 400px;
+  height: 300px;
+}
+
+.block-pie-buying-mode .recharts-sector:focus {
+  outline: none;
+}
