@@ -34,7 +34,6 @@ export default function BlockPieBuyingMode({ licences, licencesUsers }) {
     let done = [];
     licences.forEach(element => {
       if (valueByLicence[element.name] && !done.includes(element.name)) {
-        console.log(element.name)
         const buyingMode = element.buying_mode;
         buyingModeValues[buyingMode] += valueByLicence[element.name];
         done.push(element.name);

@@ -1,20 +1,74 @@
 .menu-left-licences {
-    width: 100%;
-    height: calc(100% - 200px);
-    background-color: lightblue;
+  width: 100%;
+  height: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  overflow-y: auto;
+  font-family: 'Inter', sans-serif;
 }
 
-.menu-left-licences ul {
-    list-style-type: none;
-    padding-left: 20px;
+.menu-left-licences .menu-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
 }
 
-.menu-left-licences li {
-    display: flex;
-    flex-direction: row;
+.menu-left-licences .licence-title {
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
 }
 
-.menu-left-licences img {
-    width: 24px;
-    height: 24px;
+.menu-left-licences .licence-title:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.menu-left-licences .arrow {
+  transition: transform 0.3s ease;
+}
+
+.menu-left-licences .arrow.open {
+  transform: rotate(90deg);
+}
+
+.menu-left-licences .licence-sublist {
+  list-style: none;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.menu-left-licences .licence-sublist.open {
+  max-height: 500px;
+}
+
+.menu-left-licences .licence-sublist li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-left-licences .licence-sublist li:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.menu-left-licences .licence-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.menu-left-licences .licence-name {
+  font-size: 14px;
 }

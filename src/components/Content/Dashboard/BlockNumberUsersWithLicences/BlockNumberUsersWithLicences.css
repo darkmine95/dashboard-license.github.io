@@ -1,0 +1,16 @@
+.block-number-users-with-licences {
+  width: 220px;
+  height: 115px;
+}
+
+.block-number-users-with-licences .block-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.block-number-users-with-licences .block-value {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}

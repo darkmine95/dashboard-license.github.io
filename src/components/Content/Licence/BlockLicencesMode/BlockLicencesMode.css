@@ -1,0 +1,17 @@
+.block-licences-mode {
+  margin-top: 20px;
+  width: 220px;
+  height: 115px;
+}
+
+.block-licences-mode .block-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.block-licences-mode .block-value {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}

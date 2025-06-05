@@ -1,5 +1,60 @@
-.menu-left-general {
-    width: 100%;
-    height: 200px;
-    background-color: green;
+.menu-left-general button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1); /* rend l'image blanche */
+}
+
+.menu-header {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+   font-family: 'Inter', sans-serif;
+}
+
+.menu-left-general ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.menu-left-general li {
+  height: 46px;
+  margin-bottom: 20px;
+  
+}
+
+.menu-left-general button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.menu-left-general button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }

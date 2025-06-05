@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import './MenuLeftLicences.css';
 
 export default function MenuLeftLicences({ licences, setPageSelected }) {
+  const [openSections, setOpenSections] = useState({});
 
-  // Regroupement des licences par nom
   const dataFormatted = useMemo(() => {
     let dataFormattedTmp = {};
     licences.forEach(d => {
@@ -16,43 +16,45 @@ export default function MenuLeftLicences({ licences, setPageSelected }) {
     return dataFormattedTmp;
   }, [licences]);
 
+  const toggleSection = (name) => {
+    setOpenSections(prev => ({
+      ...prev,
+      [name]: !prev[name]
+    }));
+  };
+
   const handleClick = (event, name, version) => {
     event.preventDefault();
     setPageSelected({
       page: "Licence",
       licence_name: name,
       licence_version: version
-    })
-  }
+    });
+  };
 
   return (
     <div className="menu-left-licences">
-      <h1>Licences</h1>
-      <ul>
-        {
-          Object.keys(dataFormatted).map((licence, index) => {
-            return <React.Fragment key={index}>
-              <h2>{licence}</h2>
-              <ul>
-                {
-                  dataFormatted[licence].map((elt, index2) =>
-                    <li 
-                      key={index2}
-                      onClick={(event) => handleClick(event, elt.name, elt.version)}>
-                        <div className='licence-icon'>
-                          <img src={'/icons/' + elt.icon} alt='licence-icon' />
-                        </div>
-                        <div className='licence-name'>
-                          {elt.version}
-                        </div>
-                    </li>
-                  )
-                }
-              </ul>
-            </React.Fragment>
-          })
-        }
-      </ul>
+      <div className="menu-header">Licences</div>
+      {
+        Object.keys(dataFormatted).map((licence, index) => (
+          <div className="licence-group" key={index}>
+            <div className="licence-title" onClick={() => toggleSection(licence)}>
+              <span>{licence}</span>
+              <span className={`arrow ${openSections[licence] ? 'open' : ''}`}>ᐯ</span>
+            </div>
+            <ul className={`licence-sublist ${openSections[licence] ? 'open' : ''}`}>
+              {
+                dataFormatted[licence].map((elt, idx) => (
+                  <li key={idx} onClick={(event) => handleClick(event, elt.name, elt.version)}>
+                    <img className="licence-icon" src={'/icons/' + elt.icon} alt='icon' />
+                    <span className="licence-name">{elt.version}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        ))
+      }
     </div>
   );
 }

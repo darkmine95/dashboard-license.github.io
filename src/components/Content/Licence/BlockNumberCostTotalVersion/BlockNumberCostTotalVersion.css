@@ -1,0 +1,19 @@
+.block-cost-total-version {
+  margin-top: 20px;
+  width: 220px;
+  height: 115px;
+}
+
+.block-cost-total-version .block-text {
+  height: 55px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.block-cost-total-version .block-value {
+  height: 55px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,10 +1,14 @@
-import './ManageLicences.css';
+import React, { useEffect, useState } from 'react';
+import FormulaireLicences from './FormulaireLicences/FormulaireLicences';
 
-export default function ManageLicences() {
+const ManageLicences = ({licences}) => {
 
   return (
-    <div className="manage-licences">
+    <div>
       <h1>Gestion des licences</h1>
+      <FormulaireLicences licences={licences} />
     </div>
   );
-}
+};
+
+export default ManageLicences;

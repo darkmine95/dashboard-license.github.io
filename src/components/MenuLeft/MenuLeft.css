@@ -1,14 +1,17 @@
 .menu-left {
-    width: 250px;
-    height: calc(100% - 35px);
+   width: 250px;
+    height: calc(100% - 65px);
     float: left;
     display: flex;
     flex-direction: column;
+    background: #444545;
+    color: #ffffff;
+    position: fixed;
+    top: 65px;
 }
 
 .menu-left ul {
     list-style-type: none;
-    padding-left: 20px;
 }
 
 .menu-left li {
@@ -16,7 +19,3 @@
     flex-direction: row;
 }
 
-.menu-left img {
-    width: 24px;
-    height: 24px;
-}
