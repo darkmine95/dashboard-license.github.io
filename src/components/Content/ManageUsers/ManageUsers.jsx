@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import FormulaireUsers from './FormulaireUsers/FormulaireUsers';
 
 const ManageUsers = ({licencesUsers}) => {
-    console.log(licencesUsers)
 
 
   return (

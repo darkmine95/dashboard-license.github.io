@@ -5,89 +5,44 @@ export default function FormulaireUsers({ licencesUsers }){
   
 
   return (
-    <div className="formulaire-licences">        
-      <div className="section-form">
-        <h2>Ajouter une licence</h2>
-        <div className="form-group">
-          <div className="form-control">
-            <label>Nom</label>
+    <div className="form-users">        
+      <div className="section-form-users">
+        <h2>Ajouter un utilisateurs</h2>
+        <div className="form-user-group">
+          <div className="form-user-control">
+            <label>User</label>
             <input type="text" />
           </div>
-          <div className="form-control">
+          <div className="form-user-control">
+            <label>Service</label>
+            <input type="text" />
+          </div>
+          <div className="form-user-control">
+            <label>Site</label>
+            <input type="text" />
+          </div>
+          <div className="form-user-control">
+            <label>Licence</label>
+            <input type="text" />
+          </div>
+          <div className="form-user-control">
             <label>Version</label>
             <input type="text" />
           </div>
-          <div className="form-control">
-            <label>Date de vérification</label>
-            <input type="date" />
-          </div>
-          <div className="form-control">
-            <label>Mode d'achat</label>
-            <input type="text" />
-          </div>
-          <div className="form-control">
-            <label>Coût annuel TTC</label>
-            <input type="number" />
-          </div>
-          <div className="form-control">
-            <label>Coût total</label>
-            <input type="number" />
-          </div>
-          <div className="form-control">
-            <label>Centre de coût</label>
-            <input type="text" />
-          </div>
-          <div className="form-control">
-            <label>Clé de licence</label>
-            <input type="text" />
-          </div>
-          <div className="form-control">
-            <label>Type de souscription</label>
-            <input type="text" />
-          </div>
-          <div className="form-control">
-            <label>Détails souscription</label>
-            <input type="text" />
-          </div>
-          <div className="form-control">
-            <label>Date début</label>
-            <input type="date" />
-          </div>
-          <div className="form-control">
-            <label>Date fin</label>
-            <input type="date" />
-          </div>
-          <div className="form-control">
-            <label>Usage</label>
-            <input type="text" />
-          </div>
-          <div className="form-control">
-            <label>URL</label>
-            <input type="url" />
-          </div>
-          <div className="button-ajouter-licence"><button>Ajouter</button></div>
+          <div className="button-ajouter-user"><button>Ajouter</button></div>
         </div>
       </div>
 
-      <div className="section-table">
-        <h2>Contrôler les licences</h2>
-        <table className="licence-table">
+      <div className="section-table-user">
+        <h2>Contrôler les utilisateurs</h2>
+        <table className="user-table">
           <thead>
             <tr>
-              <th>Nom</th>
+              <th>User</th>
+              <th>Service</th>
+              <th>Site</th>
+              <th>Licence</th>
               <th>Version</th>
-              <th>Date de verification</th>
-              <th>Mode d'achat</th>
-              <th>côut annuel ttc</th>
-              <th>coût total</th>
-              <th>Centre de coût</th>
-              <th>Clé de licence</th>
-              <th>Type de souscription</th>
-              <th>Détails de la souscription</th>
-              <th>Date de début de souscription</th>
-              <th>Date de fin de souscription</th>
-              <th>Usage</th>
-              <th>url</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -99,22 +54,13 @@ export default function FormulaireUsers({ licencesUsers }){
                 </td>
               </tr>
             ) : (
-              licencesUsers.map((licence, index) => (
+              licencesUsers.map((licencesUsers, index) => (
                 <tr key={index}>
-                  <td>{licence.name}</td>
-                  <td>{licence.version}</td>
-                  <td>{licence.verification_date}</td>
-                  <td>{licence.buying_mode}</td>
-                  <td>{licence.cost_annual_ttc}</td>
-                  <td>{licence.cost_total}</td>
-                  <td>{licence.cost_center}</td>
-                  <td>{licence.licence_key}</td>
-                  <td>{licence.subscription_type}</td>
-                  <td>{licence.subscription_details}</td>
-                  <td>{licence.subscription_details}</td>
-                  <td>{licence.subscription_date_end}</td>
-                  <td>{licence.usage}</td>
-                  <td>{licence.url}</td>
+                  <td>{licencesUsers.user}</td>
+                  <td>{licencesUsers.service}</td>
+                  <td>{licencesUsers.site}</td>
+                  <td>{licencesUsers.licence}</td>
+                  <td>{licencesUsers.version}</td>
                   <td><button>Supprimer</button></td>
                 </tr>
               ))
