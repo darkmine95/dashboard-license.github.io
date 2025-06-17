@@ -3,6 +3,8 @@ import BlockNumberCostTotalVersion from './BlockNumberCostTotalVersion/BlockNumb
 import BlockNumberUsersWithThisVersion from './BlockNumberUsersWithThisVersion/BlockNumberUsersWithThisVersion';
 import BlockNumberCostYearVersion from './BlockNumberCostYearVersion/BlockNumberCostYearVersion';
 import BlockLicencesMode from './BlockLicencesMode/BlockLicencesMode';
+import TableLicence from './TableLicence/TableLicence';
+
 
 export default function Licence({ name, version,licences, licencesUsers }) {
 
@@ -16,7 +18,12 @@ export default function Licence({ name, version,licences, licencesUsers }) {
         <BlockNumberCostYearVersion licences={licences} licencesUsers={licencesUsers} version={version} />
         <BlockNumberUsersWithThisVersion licences={licences} licencesUsers={licencesUsers} version={version} />
         <BlockLicencesMode licences={licences}  version={version} />
+      
       </section>  
+
+      <section className='section-two-table'>
+         <TableLicence name={name}  version={version} licences={licences} licencesUsers={licencesUsers}/>
+      </section>
       </div>
     </div>
   );
